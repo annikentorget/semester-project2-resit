@@ -1,0 +1,80 @@
+.card {
+    width: 450px;
+    border-radius: 18px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    position: relative;
+
+    &__image {
+        width: 100%;
+        border-radius: 18px 18px 0 0;
+        height: 15vw;
+        object-fit: cover;
+        
+    }
+
+    &__title {
+        padding: 0 20px;
+        font-size: 28px;
+    }
+
+    &__excerpt {
+        padding: 0 20px;
+        color: #7A7A7A;
+        font-size: 15px;
+        margin-bottom: 100px;
+    }
+
+    &__read-more {
+        color: #FF32C5;
+        text-decoration: none;
+        padding: 20px;
+        font-weight: bold;
+        position: absolute;
+        bottom: 0;
+
+        svg {
+            margin-right: 5px;
+        }
+    }
+
+    &__delete-button {
+        border: none;
+        box-sizing: border-box;
+        background-color: white;
+        border-radius: 18px;
+        color: #931F1D;
+        padding: 20px;
+        font-weight: bold;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        cursor: pointer;
+        font-family: 'Montserrat';
+        font-size: 15px;
+
+        svg {
+            margin-right: 5px;
+        }
+    }
+
+    &__edit-button {
+        border: none;
+        box-sizing: border-box;
+        background-color: white;
+        border-radius: 18px;
+        color: #931F1D;
+        padding: 20px;
+        font-weight: bold;
+        cursor: pointer;
+        font-family: 'Montserrat';
+        font-size: 15px;
+        margin-bottom: 40px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+
+        svg {
+            margin-right: 5px;
+        }
+    }
+}

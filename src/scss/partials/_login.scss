@@ -1,0 +1,91 @@
+.login {
+    display: flex;
+
+    &__column-left {
+        flex: 60%;
+        margin-top: -140px;
+        height: 100vh;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__form {
+        width: 100%;
+        max-width: 650px;
+    }
+
+    &__header {
+        font-size: 40px;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    &__label {
+        display: block;
+        font-size: 1.5rem;
+        padding: 20px;
+    }
+
+    &__input {
+        display: block;
+        width: 100%;
+        padding: 20px;
+        border: 1px solid #FEB9EB;
+        background-color: #FFF2FB;
+        border-radius: 18px;
+        margin-top: 15px;
+        max-width: 565px;
+    }
+
+    &__button {
+        color: white;
+        background-color: #FF32C5;
+        border: none;
+        padding: 15px;
+        border-radius: 50px;
+        width: 200px;
+        font-size: 22px;
+        display: block;
+        margin: 0 auto;
+        margin-top: 30px;
+        cursor: pointer;   
+    }
+
+    &__column-right {
+        flex: 40%;
+        background: linear-gradient(to bottom, #ff19be, #FEB9EB);
+        height: 101vh;
+        margin-top: -150px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    &__header-right {
+        color: white;
+        font-size: 40px;
+        text-align: center;
+    }
+
+    &__text {
+        color: white;
+        font-size: 22px;
+        text-align: center;
+    }
+
+    &__button-right {
+        color: black;
+        background-color: white;
+        border: none;
+        padding: 15px;
+        border-radius: 50px;
+        width: 200px;
+        font-size: 22px;
+        margin-top: 30px;
+        cursor: pointer;
+    }
+}

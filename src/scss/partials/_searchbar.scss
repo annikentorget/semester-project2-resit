@@ -1,0 +1,36 @@
+.searchbar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+
+
+    &__input {
+        padding: 20px;
+        background-color: #FFF2FB;
+        border: #FEB9EB solid 1px;
+        border-radius: 18px;
+        flex-grow: 1;
+        outline: none;
+        font-family: 'Montserrat';
+    }
+
+    &__button {
+        padding: 17.3px;
+        border-radius: 0 18px 18px 0;
+        background-color: #FF32C5;
+        border: #FF32C5 1px solid;
+        margin-left: -40px;
+        color: white;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+            background-color: #E123AB;
+        }
+    }
+
+    &__icon {
+        font-size: 20px;
+    }
+}

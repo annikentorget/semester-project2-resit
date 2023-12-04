@@ -1,0 +1,234 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    color: black;
+    padding: 20px;
+    margin: 0 auto;
+
+    &__hamburger {
+        cursor: pointer;
+        z-index: 2;
+        margin-top: 15px;
+    }
+
+    &__container {
+        display: flex;
+    }
+
+
+    /* Hamburger meny icon */
+    
+    &__bar-top {
+        width: 15px;
+        height: 3px;
+        background-color: black;
+        transition: transform 0.3s ease;
+        margin: 6px 0;
+        border-radius: 5px;
+    }
+
+    &__bar-middle {
+        width: 30px;
+        height: 3px;
+        background-color: black;
+        transition: transform 0.3s ease;
+        margin: 6px 0;
+        border-radius: 5px;
+    }
+
+    &__bar-bottom {
+        width: 30px;
+        height: 3px;
+        background-color: black;
+        transition: transform 0.3s ease;
+        margin: 6px 0;
+        border-radius: 5px;
+    }
+
+    /* Hamburger menu close icon */
+
+    &__bar {
+        width: 25px;
+        height: 3px;
+        background-color: black;
+        transition: transform 0.3s ease;
+        margin: 6px 0;
+        border-radius: 5px;
+    }
+
+    &__bar:nth-child(1) {
+        transform: rotate(-45deg) translate(-4px, 2px);
+    }
+
+    &__bar:nth-child(2) {
+        transform: rotate(45deg) translate(-4px, -3px);
+    }
+
+    /* Logo and slogan */
+
+    &__logobox {
+        margin-left: 40px;
+    }
+
+    &__logo {
+        font-size: 2.5rem;
+        font-family: 'Bree Serif';
+        text-decoration: none;
+        color: black;
+    }
+
+    &__slogan {
+        font-size: 1rem;
+        font-weight: 100;
+      }
+
+    &__menu-right {
+        display: flex;
+        flex-direction: row;
+    }
+
+    /* Left navbar menu */
+
+    &__menu-left {
+        display: none;
+        flex-direction: column;
+    }
+
+    &__menu-left a, &__menu-right a {
+        color: black;
+        text-decoration: none;
+        padding: 10px;
+    }
+
+
+    &__menu-left.active {
+        display: flex;
+        position: absolute;
+        background-color: #FFF2FB;
+        left: 0;
+        height: 94.5vh;
+        flex-direction: column;
+        z-index: 1;
+        transition: transform 0.3s ease;
+        margin-top: -20px;
+        padding-top: 70px;
+        width: 400px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    &__item-left {
+        margin-top: 20px;
+        border-bottom: #FECDF0 solid 1px;
+        font-size: 18px;
+    }
+
+    /* Buttons in left menu */ 
+
+    &__github {
+        border: none;
+        background-color: #FF32C5;
+        margin: 0 auto;
+        width: 250px;
+        margin-top: 30px;
+        padding: 15px;
+        border-radius: 5px;
+        color: white;
+        font-size: 22px;
+        cursor: pointer;
+        display: block;
+
+        svg {
+            margin-right: 20px;
+            font-size: 25px;
+        }
+
+    }
+
+    &__sign-in {
+        border: none;
+        background-color: #414770;
+        margin: 0 auto;
+        width: 250px;
+        margin-top: 20px;
+        padding: 15px;
+        border-radius: 5px;
+        color: white;
+        font-size: 22px;
+        cursor: pointer;
+        display: block;
+
+        svg {
+            margin-right: 20px;
+            font-size: 25px;
+        }
+    }
+
+    &__sign-out-button {
+        border: none;
+        background-color: #931F1D;
+        margin: 0 auto;
+        width: 250px;
+        margin-top: 20px;
+        padding: 15px;
+        border-radius: 5px;
+        color: white;
+        font-size: 22px;
+        cursor: pointer;
+        display: block;
+
+        svg {
+            margin-right: 20px;
+            font-size: 25px;
+        }
+    }
+
+    /* Right menu when signed in */
+
+    &__sign-out {
+        border: none;
+        background-color: white;
+        font-family: 'Montserrat';
+        font-size: 18px;
+        height: 1rem;
+        padding: 10px;
+        cursor: pointer;
+    }
+
+    &__add-article {
+        background-color: #FFF2FB;
+        border: solid 1px #FEB9EB;
+        border-radius: 5px;
+        width: 180px;
+        font-size: 18px;
+        text-align: center;
+        height: 50px;
+        font-family: 'Montserrat';
+        margin-top: -5px;
+        margin-left: 10px;
+        cursor: pointer;
+
+        svg {
+            margin-right: 10px;
+        }
+    }
+
+    /* Mobile responsive */
+
+    @media only screen and (max-width: 768px) {
+        &__menu-left {
+            display: flex;
+        }
+
+        &__menu-right {
+            display: none;
+        }
+
+        &__menu-left.active {
+            display: none;
+        }
+
+        &__logo {
+            order: 2;
+        }
+    }
+}

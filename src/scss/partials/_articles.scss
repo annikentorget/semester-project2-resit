@@ -1,0 +1,16 @@
+.articles {
+    max-width: 1800px;
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+
+    &__header {
+        font-size: 35px;
+        font-weight: bold;
+    }
+
+    &__search {
+        max-width: 450px;
+        padding: 10px;
+    }
+}

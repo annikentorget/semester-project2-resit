@@ -1,0 +1,17 @@
+@import './partials/searchbar';
+@import './partials/card';
+@import './partials/cards';
+@import './partials/navbar';
+@import './partials/homepage';
+@import './partials/articles';
+@import './partials/add-article';
+@import './partials/login';
+
+@import url('https://fonts.googleapis.com/css2?family=Bree Serif');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat');
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
